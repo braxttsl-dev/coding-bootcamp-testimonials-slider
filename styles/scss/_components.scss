@@ -1,13 +1,8 @@
+
 .toggle-button{
-    width: pxToRem(80px);
-    height: pxToRem(40px);
     border: none;
     position: absolute;
     border-radius: pxToRem(28px);
-    bottom: -20px;
-    left: 0;
-    right: 0;
-    margin: auto;
     z-index: 3;
     display: flex;
     align-items: center;

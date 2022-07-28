@@ -1,69 +1,134 @@
-main{
-    text-align: center;
-    height: 100vh;
-    position: relative;
-}
-.image-container{
-    position: relative;
-}
-.profile-image{
-   width: pxToRem(254px) ;
-   margin-top: pxToRem(54px);
-   border-radius: pxToRem(10px);
-   position: relative;
-   z-index: 1;
-   margin-inline: auto;
+@media screen and (max-width: 1023px) {
+    main {
+        text-align: center;
+        position: relative;
+        max-width: pxToRem(375px);
+        margin-inline: auto;
+    }
+
+    .profile-image {
+        width: pxToRem(254px);
+        margin-top: pxToRem(54px);
+        position: relative;
+        margin-inline: auto;
+
+    }
+
+    .toggle-button {
+        width: pxToRem(80px);
+        height: pxToRem(40px);
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .background-profile {
+        width: pxToRem(327px);
+        position: absolute;
+        margin: auto;
+        top: pxToRem(-6px);
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .content-container {
+        margin-top: pxToRem(80px);
+    }
+
+    .quote {
+        width: pxToRem(60px);
+        top: -25px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .content-quote {
+        font-size: pxToRem(18px);
+        line-height: pxToRem(24px);
+        margin-inline: pxToRem(32px);
+        margin-bottom: pxToRem(18px);
+    }
+
+    .content-name {
+        font-size: pxToRem(15px);
+    }
+
+    .content-title {
+        font-size: pxToRem(15px);
+        display: block;
+    }
+
 }
 
-.background-profile{
-    width: pxToRem(327px);
-    position: absolute;
-    margin: auto;
-    top: pxToRem(-6px);
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
+@media screen and (min-width:1024px) {
 
-.content-container{
-    margin-top: pxToRem(80px);
-    position: relative;
-}
-.quote{
-    width: pxToRem(60px) ;
-    position: absolute;
-    top: -25px;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-inline: auto;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
 
-.content-quote{
-    font-size: pxToRem(18px);
-    font-weight: 300;
-    line-height: pxToRem(24px);
-    margin-inline: pxToRem(32px);
-    margin-bottom: pxToRem(18px);
-    font-weight: 300;
-    color: $Dark-Blue;
-}
+    .profile-image {
+        z-index: 1;
+        position: relative;
+    }
 
-.content-name{
-    font-size: pxToRem(15px);
-    font-weight: 700;
-}
+    .background-profile {
+        top: -12%;
+        bottom: 0;
+        left: -12%;
+        z-index: 0;
+    }
 
-.content-title{
-    font-size: pxToRem(15px);
-    font-weight: 500;
-    color: $Grayish-Blue;
-    display: block;
-}
+    .toggle-button {
+        width: pxToRem(112px);
+        height: pxToRem(56px);
+        bottom: pxToRem(-25px);
+        left: pxToRem(70px);
+        margin: auto;
+    }
 
-.curve{
-    position:absolute;
-    left: 0;
-    bottom: 0;
-    height: pxToRem(72px);
-}
 
+    .quote {
+        left: pxToRem(85px);
+        top: pxToRem(-60px);
+    }
+
+    .content-container {
+        margin: -50px;
+        z-index: 3;
+    }
+
+    .content-quote {
+        font-size: pxToRem(32px);
+        line-height: pxToRem(44px);
+        width: pxToRem(635px);
+    }
+
+    .content-flex {
+        display: flex;
+        align-items: center;
+        gap: pxToRem(10px);
+        margin-top: pxToRem(30px);
+    }
+
+    .content-name {
+        font-size: pxToRem(20px);
+        line-height: pxToRem(38px);
+    }
+
+    .content-title {
+        font-size: pxToRem(20px);
+    }
+
+
+
+
+
+}
